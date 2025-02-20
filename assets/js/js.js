@@ -7,10 +7,10 @@
 	      function encodeEmails() {
 	      	const mails = document.querySelectorAll('.mail');
 	      	mails.forEach((m)=> {
-	      		const target = m.dataset.user || 'info';
-	      		const domain = m.dataset.domain || 'landwehr-cie.de';
-	      		const link = `${target}@${domain}`;
-	      		const text = m.textContent || link;
+                const target = m.dataset.user || 'nemo.grippa+juliafranck';
+                const domain = m.dataset.domain || 'gmail.com';
+                const link = `${target}@${domain}`;	      		
+                const text = m.textContent || link;
 	      		const a = document.createElement('a');
 	      		a.href = `mailto:${link}`;
 	      		a.textContent = text;

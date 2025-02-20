@@ -65,10 +65,6 @@ body, main {
   }
 }
 
-main > article {
-  margin-bottom: 10%;
-}
-
 figure {
   margin: 0;
 }
