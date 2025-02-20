@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "SabonLTPro";
+  src: url("../fonts/sabon/webfonts/359389_0_0.eot");
+  src: url("../fonts/sabon/webfonts/359389_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/sabon/webfonts/359389_0_0.woff2") format("woff2"), url("../fonts/sabon/webfonts/359389_0_0.woff") format("woff"), url("../fonts/sabon/webfonts/359389_0_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SabonLTPro";
+  src: url("../fonts/sabon/webfonts/359389_1_0.eot");
+  src: url("../fonts/sabon/webfonts/359389_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/sabon/webfonts/359389_1_0.woff2") format("woff2"), url("../fonts/sabon/webfonts/359389_1_0.woff") format("woff"), url("../fonts/sabon/webfonts/359389_1_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SabonLTPro";
+  src: url("../fonts/sabon/webfonts/359389_2_0.eot");
+  src: url("../fonts/sabon/webfonts/359389_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/sabon/webfonts/359389_2_0.woff2") format("woff2"), url("../fonts/sabon/webfonts/359389_2_0.woff") format("woff"), url("../fonts/sabon/webfonts/359389_2_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SabonLTPro";
+  src: url("../fonts/sabon/webfonts/359389_3_0.eot");
+  src: url("../fonts/sabon/webfonts/359389_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/sabon/webfonts/359389_3_0.woff2") format("woff2"), url("../fonts/sabon/webfonts/359389_3_0.woff") format("woff"), url("../fonts/sabon/webfonts/359389_3_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 21px;
+  line-height: 1.25;
+  -webkit-text-size-adjust: 100%;
+}
+@media (max-width: 599px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "SabonLTPro", "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #c6d2da;
+}
+body.green {
+  color: #ffffff;
+  background-color: #1F3533;
+}
+
+body, main {
+  margin: 0;
+  padding: 3% 0;
+}
+@media (min-width: 1800px) {
+  body, main {
+    padding: 2% 0;
+  }
+}
+
+main > article {
+  margin-bottom: 10%;
+}
+
+figure {
+  margin: 0;
+}
+figure.mobile-only {
+  margin-bottom: 3rem;
+}
+figure.mobile-only figcaption {
+  margin: 0;
+  padding: 0 !important;
+}
+figure.pic-book {
+  width: 33.33%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+img.mobile-only {
+  margin-bottom: 3rem;
+}
+
+details {
+  font-size: 0.7em;
+}
+
+details, details a {
+  color: #545454;
+}
+
+summary {
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+summary:focus {
+  outline: none;
+}
+summary::marker {
+  content: "";
+}
+summary::-webkit-details-marker {
+  font-size: 0;
+}
+
+@media (max-width: 899.98px) {
+  .desk-only {
+    display: none;
+  }
+
+  article {
+    padding-top: 2rem;
+  }
+
+  main > section, main #contact, main .article-content-inner *:not(img.portrait-mobile) {
+    padding: 0 7%;
+  }
+  main #contact {
+    padding-top: 2rem;
+  }
+
+  .pic-book-mobile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .mobile-only {
+    display: none;
+  }
+
+  main > section, main > article > div {
+    padding: 2% 5%;
+  }
+
+  main > article:not(#contact) {
+    display: flex;
+    align-items: center;
+  }
+  main > article:not(#contact) > div, main > article:not(#contact) > figure {
+    width: 50%;
+  }
+  main > article:not(#contact) > div.pic-book, main > article:not(#contact) > figure.pic-book {
+    width: 33.33%;
+  }
+
+  .article-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-content-inner {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  main > article > div {
+    padding: 5%;
+  }
+}
+p, table {
+  margin: 0 0 1.25em;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ffffff;
+}
+.overlay a {
+  color: #000000;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .semibold {
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+h1, h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+@media (max-width: 599px) {
+  h1, h2 {
+    font-size: 6.5vw;
+  }
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+#book h3 {
+  margin-bottom: 0.2em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+.typo-uppercase {
+  text-transform: uppercase;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  color: #fff;
+  float: right;
+  margin-right: 1rem;
+  font-size: 0.8em;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
